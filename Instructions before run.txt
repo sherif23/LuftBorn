@@ -1,0 +1,5 @@
+1 - run API (.net core web api project) on localhost:5001
+
+2 - open SPA (Angualr project) and run (npm i)
+
+3- run SPA project using (ng serve)

@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="mx-auto mt-4">
+    <button type="button " class="btn btn-outline-primary" routerLink="/add">
+      <i class="fas fa-plus"></i> Add new user
+    </button>
+  </div>
+  <div class="pt-5">
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; index as i">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phone }}</td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              routerLink="/edit/{{ user.id }}"
+            >
+              Edit
+            </button>
+          </td>
+          <td>
+            <button type="button" (click)="onDelete(i)" class="btn btn-danger">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
