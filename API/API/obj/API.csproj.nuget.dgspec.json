@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\LuftBorn task\\API\\API\\API.csproj": {}
+    "E:\\LuftBorn task\\LuftBorn\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "E:\\LuftBorn task\\API\\API\\API.csproj": {
+    "E:\\LuftBorn task\\LuftBorn\\API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LuftBorn task\\API\\API\\API.csproj",
+        "projectUniqueName": "E:\\LuftBorn task\\LuftBorn\\API\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "E:\\LuftBorn task\\API\\API\\API.csproj",
+        "projectPath": "E:\\LuftBorn task\\LuftBorn\\API\\API\\API.csproj",
         "packagesPath": "C:\\Users\\xps\\.nuget\\packages\\",
-        "outputPath": "E:\\LuftBorn task\\API\\API\\obj\\",
+        "outputPath": "E:\\LuftBorn task\\LuftBorn\\API\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xps\\AppData\\Roaming\\NuGet\\NuGet.Config",
