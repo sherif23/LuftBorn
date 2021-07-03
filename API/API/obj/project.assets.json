@@ -11,6 +11,18 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.Google/3.1.16": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -443,6 +455,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Google/3.1.16": {
+      "sha512": "QsZA3PuTGvXJw9XqP2tfT+lKRlJibFXKvvCtbLs5N2AH2bxZ+XfZZle3tL4xehevE6jDeVbMGgX7qCGYsXguOA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/3.1.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.3.1.16.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -1175,6 +1202,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Microsoft.AspNetCore.Authentication.Google >= 3.1.16",
       "Microsoft.EntityFrameworkCore >= 5.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.7",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.7",
@@ -1182,19 +1210,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\xps\\.nuget\\packages\\": {}
+    "C:\\Users\\Sherif\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\LuftBorn task\\LuftBorn\\API\\API\\API.csproj",
+      "projectUniqueName": "D:\\programming\\Tasks\\LuftBorn\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "E:\\LuftBorn task\\LuftBorn\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\xps\\.nuget\\packages\\",
-      "outputPath": "E:\\LuftBorn task\\LuftBorn\\API\\API\\obj\\",
+      "projectPath": "D:\\programming\\Tasks\\LuftBorn\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Sherif\\.nuget\\packages\\",
+      "outputPath": "D:\\programming\\Tasks\\LuftBorn\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\xps\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sherif\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1206,6 +1234,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -1217,7 +1246,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Google": {
+            "target": "Package",
+            "version": "[3.1.16, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.7, )"
@@ -1257,7 +1291,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
