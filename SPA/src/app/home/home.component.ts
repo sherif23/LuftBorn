@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { User } from '../models/user';
 import { UserService } from '../services/user.service';
 
@@ -12,8 +12,11 @@ import { UserService } from '../services/user.service';
 export class HomeComponent implements OnInit {
 
 
+  token:{id:string, name:string , email:string , photoUrl:string ,firstName : string , lastName : string
+  , authToken:string , idToken : string , response : string , provider : string}
   users : User [];
-  constructor( private route : ActivatedRoute ,private userService : UserService) {
+  name : string;
+  constructor( private route : ActivatedRoute ,private userService : UserService ,private  router : Router) {
 
    }
 
@@ -24,6 +27,8 @@ export class HomeComponent implements OnInit {
       this.users = data ['users'];
     })
 
+    this.token = JSON.parse( localStorage.getItem ("google_auth"));
+  
   }
 
   onDelete ( index : number) {
@@ -34,6 +39,12 @@ export class HomeComponent implements OnInit {
     }, error => {
       alert ("Error in deleting user");
     });
+  }
+
+  onLogout () {
+
+    localStorage.removeItem('google_auth');
+    this.router.navigate(['']);
   }
 
 }
