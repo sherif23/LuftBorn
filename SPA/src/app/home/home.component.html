@@ -1,8 +1,26 @@
 <div class="container">
-  <div class="mx-auto mt-4">
-    <button type="button " class="btn btn-outline-primary" routerLink="/add">
-      <i class="fas fa-plus"></i> Add new user
-    </button>
+  <div class="mt-4 d-flex bd-highlight">
+    <div class="w-75">
+      <button type="button " class="btn btn-outline-primary" routerLink="/add">
+        <i class="fas fa-plus"></i> Add new user
+      </button>
+    </div>
+    <div class="d-flex flex-row bd-highlight mb-3" style="direction: rtl">
+      <button
+        type="button"
+        style="width: 70px"
+        (click)="onLogout()"
+        class="btn btn-dark mx-2"
+      >
+        Logout
+      </button>
+      <p class="mt-2">
+        Welcom
+        <span style="color: rgb(10, 104, 245); font-weight: bolder">
+          {{ token.name }}
+        </span>
+      </p>
+    </div>
   </div>
   <div class="pt-5">
     <table class="table">

@@ -4923,19 +4923,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sherif\\.nuget\\packages\\": {}
+    "C:\\Users\\xps\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programming\\Tasks\\LuftBorn\\API\\API\\API.csproj",
+      "projectUniqueName": "E:\\LuftBorn task\\LuftBorn\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\programming\\Tasks\\LuftBorn\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Sherif\\.nuget\\packages\\",
-      "outputPath": "D:\\programming\\Tasks\\LuftBorn\\API\\API\\obj\\",
+      "projectPath": "E:\\LuftBorn task\\LuftBorn\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\xps\\.nuget\\packages\\",
+      "outputPath": "E:\\LuftBorn task\\LuftBorn\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sherif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\xps\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4947,7 +4947,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -4959,7 +4958,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNet.Identity.EntityFramework": {
             "target": "Package",
@@ -5020,7 +5018,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
       }
     }
   },
