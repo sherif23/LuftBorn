@@ -1,16 +1,15 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace API.Models
 {
-    public class User
+    public class User : IdentityUser<int>
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string email { get; set; }
-        public string phone { get; set; }
+
+        public ICollection<UserRole> userRoles { get; set; }
 
     }
 }
