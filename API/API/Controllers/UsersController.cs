@@ -45,7 +45,7 @@ namespace API.Controllers
             return Ok(users);
         }
 
-        [HttpGet ("{id}")]
+        [HttpGet ("{id}", Name = "GetUser")]
         public async Task<IActionResult> GetUser(int id)
         {
 

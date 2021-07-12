@@ -1,4 +1,6 @@
-﻿using API.Models;
+﻿using API.Dtos;
+using API.Models;
+using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -13,23 +15,25 @@ using System.Threading.Tasks;
 
 namespace API.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AuthController : Controller
     {
         private readonly IConfiguration _config;
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private readonly IMapper _mapper;
 
-        public AuthController(IConfiguration config,
+        public AuthController(IConfiguration config, IMapper mapper,
             UserManager<User> userManager, SignInManager<User> signInManager)
         {
             _config = config;
             _userManager = userManager;
+            _mapper = mapper;
             _signInManager = signInManager;
         }
 
-       /* [HttpPost("register")]
+       [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
 
@@ -57,7 +61,7 @@ namespace API.Controllers
             var result = await _signInManager.CheckPasswordSignInAsync(user, userForLoginDto.Password, false);
             if (result.Succeeded)
             {
-                var appUser = _mapper.Map<UserForListDto>(user);
+                var appUser = _mapper.Map<UserForLoginDto>(user);
 
                 return Ok(new
                 {
@@ -69,7 +73,7 @@ namespace API.Controllers
             return Unauthorized();
 
 
-        }*/
+        }
 
         private async Task<string> GenerateJwtToken(User user)
         {

@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using API.Dtos;
+using API.Models;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +13,9 @@ namespace API.Helper
 
         public AutoMapperProfiles ()
         {
-
+            CreateMap<UserForRegisterDto, User > ();
+            CreateMap<User, UserForDetailedDto>();
+            CreateMap<UserForLoginDto, User>().ReverseMap();
         }
     }
 }
