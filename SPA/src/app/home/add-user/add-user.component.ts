@@ -13,9 +13,9 @@ export class AddUserComponent implements OnInit {
 
   user : User = {
       id : 0,
-      phone : "" , 
+      phoneNumber : "" , 
       email : "",
-      name : ""    
+      username : ""    
   };
   constructor(private userService : UserService) { }
 

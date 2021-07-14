@@ -15,6 +15,7 @@ namespace API.Helper
         {
             CreateMap<UserForRegisterDto, User > ();
             CreateMap<User, UserForDetailedDto>();
+            CreateMap<UserForDetailedDto, User>().ReverseMap();
             CreateMap<UserForLoginDto, User>().ReverseMap();
         }
     }

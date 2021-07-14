@@ -18,6 +18,8 @@ export class EditUserComponent implements OnInit {
     this.route.data.subscribe (data => {
       this.user = data ['user'];
     })
+
+    console.log(this.user);
   }
 
   onSubmit () {
